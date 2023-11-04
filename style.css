@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    height: 100vh;
+    height: 100%;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,13 +60,13 @@ header {
 /* logo */
 .logo,
 .redes-topo {
-    width: 25%;
+    width: 30%;
 
 }
 
 .redes-topo img {
-    width: 9%;
-    height: 9%;
+    width: 28px;
+    height: auto;
     background-image: linear-gradient(45deg, #fff, #orange);
     margin-right: 2px;
     padding: 0 8px 0 0;
@@ -87,7 +87,7 @@ header {
 
 /* menu */
 .menu {
-    width: 70%;
+    width: 100%;
 }
 
 .menu nav a {
@@ -255,6 +255,13 @@ shr {
 
 }
 
+.mail img {
+    margin-left: 3rem;
+    width: 5%;
+    padding-bottom: 0px;
+    color: #0bbd40;
+}
+
 .autor {
     margin-left: 5rem;
     text-align: left;
@@ -268,7 +275,7 @@ shr {
 /* nao está funcionando corretamente: centralidade e distância dos elementos*/
 
 .redes-final nav a img {
-    width: 2%;
+    width: 30px;
     sheight: 2%;
     padding-bottom: 49px;
     margin-left: 14rem;
@@ -292,7 +299,6 @@ shr {
     swidth: 500px;
     sheight: auto;
 
-
 }
 
 .copy {
@@ -300,191 +306,4 @@ shr {
     text-align: center;
 
     padding-bottom: 49px;
-}
-
-@media screen (max-width: 768px) {
-
-    .container {
-        max-width: 768p;
-        display: block;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        height: 50vh;
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    header {
-        display: block;
-        margin: 2em 2em;
-    }
-
-    body {
-        background-image: url(./Img/tela-amarela.jpeg);
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        list-style: none;
-        swidth: 100vh;
-        sheight: 100vh;
-    }
-
-    menu {
-        width: 10;
-        align-items: center;
-    }
-
-
-    menu nav a {
-        display: block;
-
-        text-align: center;
-    }
-
-    .livro img {
-        width: 300px;
-        height: auto;
-        margin-left: 5rem;
-        align-items: center;
-        padding-top: 6rem;
-        border: none;
-        box-shadow: #080808;
-        justify-items: center;
-
-    }
-
-
-
-
-    .title-h2 {
-        margin-top: 6rem;
-        margin-left: 5rem;
-        color: rgb(247, 250, 252);
-        font-size: 0.7rem;
-        text-transform: uppercase;
-        word-spacing: 7px;
-        text-shadow: 1px 1px #050505;
-    }
-
-    /* Titulo principal */
-    .title-h1 {
-        margin-left: 5rem;
-        smargin-top: 2px;
-        color: rgb(218, 170, 13);
-
-        font-size: 2rem;
-        font-weight: bold;
-        text-transform: lowercase;
-        line-height: 3.5rem;
-        text-shadow: 2px 1px #050505;
-        word-spacing: 2px;
-
-
-    }
-
-
-    /* texto do paragragos */
-    .p1,
-    .p2,
-    .p3 {
-        color: rgb(245, 241, 241);
-        line-height: 1.6rem;
-        font-size: 1rem;
-        font-weight: 300;
-        font-family: 'Georgia', 'Times New Roman', serif;
-        display: block;
-
-
-
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        column-count: 3;
-
-        width: 768px;
-        padding: 1rem;
-        margin: auto;
-        margin-bottom: 20px;
-
-        sgzid-template-columns: repeat(3, 1fr);
-        sgrid-template-columns: 50% 50%;
-        text-align: justify;
-        text-indent: 30px;
-        text-shadow: 2px 2px black;
-        margin: 2em 2em;
-    }
-
-    /* texto Epidemia*/
-
-    .Epidemia {
-        font-size: 1rem;
-        color: rgb(105, 233, 116);
-        column-count: 2;
-        margin-left: 2rem;
-        grid-template-columns: 50% 50%;
-        text-align: justify;
-        justify-content: center;
-        margin-right: 2rem;
-        flex-direction: column;
-        line-height: 1.6rem;
-        column-gap: 40px;
-        background-color: rgb(53, 51, 51);
-        padding: 50px 50px 50px 50px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        column-rule: 2px dashed rgb(184, 196, 26);
-        border-radius: 1px;
-        margin: 2em 2em;
-    }
-
-    .Epidemia h1 {
-        padding-bottom: 20px;
-        color: #04a838;
-    }
-
-
-    .meu-botao {
-        background-color: #be0a0a;
-        /* Cor de fundo do botão */
-        color: #fff;
-        /* Cor do texto do botão */
-        border: none;
-        /* Remove a borda */
-        padding: 10px 20px;
-        /* Espaçamento interno do botão */
-        font-size: 16px;
-        /* Tamanho da fonte do texto */
-        border-radius: 5px;
-        /* Borda arredondada */
-        cursor: pointer;
-        /* Altera o cursor ao passar por cima do botão */
-        transition: background-color 0.3s;
-        /* Transição suave da cor de fundo */
-        margin: auto;
-        margin-bottom: 5rem;
-    }
-
-    /* Estilizando o botão quando o mouse passa por cima */
-    .meu-botao:hover {
-        letter-spacing: 2px;
-        background-color: rgb(94, 88, 7);
-    }
-
-
-    .autor {
-        margin-left: 5rem;
-        text-align: left;
-        font-family: 'Poppins';
-
-        smargin-bottom: 5rem;
-        color: #faf7f7;
-        text-shadow: 1px 1px #080808;
-    }
-
-    .container_caixa {
-        margin: 2em 2em;
-    }
 }
